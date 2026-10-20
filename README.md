@@ -60,6 +60,13 @@ node skills/obsidian-llm-wiki/scripts/check.mjs ~/MyVault
 
 `node tests/run.mjs`가 SKILL.md 형식을 검사하고 예시 파일로 스크립트를 실제로 실행합니다. 푸시할 때마다 GitHub Actions가 같은 시험을 돌립니다(위 test 배지).
 
+<!-- credits -->
+## 출처와 영감
+
+- **LLM Wiki 아이디어**: Andrej Karpathy가 공개한 [LLM Wiki 아이디어 파일(llm-wiki.md)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)에서 왔습니다. 사람이 자료를 고르고 AI가 위키를 계속 고쳐 나가며, 옵시디언으로 결과를 본다는 핵심 방식은 이 글의 것입니다.
+- 원문은 일부러 구체적인 구조를 정하지 않은 아이디어 문서입니다. 이 스킬의 한국어 폴더 이름(받은자료·원본·위키·결과물), 머리말 항목, 확인 상태 다섯 단계, 운영규칙 문서, 점검·목록 스크립트는 작성자가 실제로 저장고를 운영하며 정한 것이고, 원문의 글이나 코드를 옮기지 않았습니다.
+- 더 알고 싶다면 원문을 직접 읽어 보는 것을 권합니다.
+
 ## 만든 사람
 
 **리도**, AI 좌충우돌 실습 중인 20년차 엔지니어입니다. 매일 AI에게 일을 맡기다가 막힌 부분을 고쳐 가며 이 스킬을 만들었습니다.
@@ -72,5 +79,8 @@ node skills/obsidian-llm-wiki/scripts/check.mjs ~/MyVault
 ## English
 
 Set up an Obsidian vault as a Karpathy-style LLM Wiki: inbox, sources, wiki, outputs, a rules file every AI reads first, templates and an index, plus scripts to rebuild the index and health-check links, front matter and recheck dates.
+
+**Credits.**
+- The LLM Wiki pattern comes from Andrej Karpathy's [llm-wiki idea file](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f). The Korean folder layout, front-matter fields, status levels, rules file and scripts are this repository's own implementation; no text or code was copied from the gist.
 
 Install: `/plugin marketplace add reedodev/obsidian-llm-wiki` then `/plugin install obsidian-llm-wiki@obsidian-llm-wiki`, or copy `skills/obsidian-llm-wiki` into `~/.claude/skills/`. See [SKILL.md](skills/obsidian-llm-wiki/SKILL.md) for the full procedure. MIT License; third-party models, fonts and libraries keep their own licenses.

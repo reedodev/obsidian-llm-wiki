@@ -43,7 +43,7 @@ file('운영규칙.md', `
 # ${NAME} 운영 규칙
 
 > 이 저장고를 다루는 AI(Claude Code, Codex, Aside 등)는 작업 전에 이 문서를 끝까지 읽고 그대로 따릅니다.
-> 만든 날: ${today} · 방식: Karpathy의 LLM Wiki 패턴
+> 만든 날: ${today} · 방식: Andrej Karpathy의 LLM Wiki 패턴 (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 > ${OWNER}는 자료를 고르고 방향과 판단을 정합니다. AI는 요약, 연결, 목록 정리, 기록, 점검을 맡습니다.
 
 ## 1. 목적

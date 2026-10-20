@@ -5,7 +5,7 @@ description: "옵시디언 보관함을 LLM 위키(받은자료·원본·위키�
 
 # 옵시디언 LLM 위키 (obsidian-llm-wiki)
 
-LLM 위키는 Andrej Karpathy가 제안한 방식입니다. 사람이 자료를 고르면 AI가 요약하고, 기존 문서에 이어 붙이고, 목록과 기록을 관리합니다. 노트가 쌓일수록 AI가 다음 작업 전에 꺼내 쓸 수 있는 "나만의 지식"이 됩니다. 작성자는 이 구조로 8,000개가 넘는 노트를 운영하고 있고, 같은 저장고를 [obsidian-brain-3d](https://github.com/reedodev/obsidian-brain-3d)로 그려 보고 [vault-recall](https://github.com/reedodev/vault-recall)로 작업 전에 찾아 씁니다.
+LLM 위키는 Andrej Karpathy가 [LLM Wiki 아이디어 파일](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)로 제안한 방식입니다. 사람이 자료를 고르면 AI가 요약하고, 기존 문서에 이어 붙이고, 목록과 기록을 관리합니다. 노트가 쌓일수록 AI가 다음 작업 전에 꺼내 쓸 수 있는 "나만의 지식"이 됩니다. 작성자는 이 구조로 8,000개가 넘는 노트를 운영하고 있고, 같은 저장고를 [obsidian-brain-3d](https://github.com/reedodev/obsidian-brain-3d)로 그려 보고 [vault-recall](https://github.com/reedodev/vault-recall)로 작업 전에 찾아 씁니다.
 
 <!-- prereq-adapt -->
 ## 준비물 (쓰기 전에 있어야 하는 것)
@@ -72,3 +72,9 @@ node scripts/check.mjs ~/MyVault --json   # 다른 도구에 넘길 때
 - 스크립트는 구조를 만들고 점검할 뿐이고, 요약과 연결의 품질은 위키를 다루는 AI와 사람의 확인에 달려 있습니다.
 - `index.mjs`는 각 문서 본문의 첫 문장으로 목록을 만듭니다. 더 좋은 한 줄 설명이 필요하면 AI가 `index.md`를 직접 다듬습니다(다시 `index.mjs`를 돌리면 덮어씁니다).
 - 링크는 파일 이름 기준으로 확인합니다. 같은 이름의 노트가 두 폴더에 있으면 구분하지 못합니다.
+
+<!-- credits -->
+## 출처와 영감
+- **LLM Wiki 아이디어**: Andrej Karpathy가 공개한 [LLM Wiki 아이디어 파일(llm-wiki.md)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)에서 왔습니다. 사람이 자료를 고르고 AI가 위키를 계속 고쳐 나가며, 옵시디언으로 결과를 본다는 핵심 방식은 이 글의 것입니다.
+- 원문은 일부러 구체적인 구조를 정하지 않은 아이디어 문서입니다. 이 스킬의 한국어 폴더 이름(받은자료·원본·위키·결과물), 머리말 항목, 확인 상태 다섯 단계, 운영규칙 문서, 점검·목록 스크립트는 작성자가 실제로 저장고를 운영하며 정한 것이고, 원문의 글이나 코드를 옮기지 않았습니다.
+- 더 알고 싶다면 원문을 직접 읽어 보는 것을 권합니다.
