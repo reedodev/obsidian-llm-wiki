@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-llm-wiki",
+  "owner": {
+    "name": "Reedo"
+  },
+  "metadata": {
+    "description": "Set up an Obsidian vault as a Karpathy-style LLM Wiki: inbox, sources, wiki, outputs, a rules file every AI reads first, templates and an index, plus scripts to rebuild the index and health-check links, front matter and recheck dates.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "obsidian-llm-wiki",
+      "description": "Set up an Obsidian vault as a Karpathy-style LLM Wiki: inbox, sources, wiki, outputs, a rules file every AI reads first, templates and an index, plus scripts to rebuild the index and health-check links, front matter and recheck dates.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/obsidian-llm-wiki"
+      ]
+    }
+  ]
+}
